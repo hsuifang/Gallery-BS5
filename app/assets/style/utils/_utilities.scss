@@ -426,12 +426,17 @@ $utilities: map-merge(
     // scss-docs-end utils-spacing
     // Text
     // scss-docs-start utils-text
-    // "font-size": (
-    //   rfs: false,
-    //   property: font-size,
-    //   class: fs,
-    //   values: $font-sizes
-    // ),
+    "font-family": (
+      property: font-family,
+      class: font,
+      values: (monospace: var(--#{$variable-prefix}font-monospace))
+    ),
+    "font-size": (
+      rfs: true,
+      property: font-size,
+      class: fs,
+      values: $font-sizes
+    ),
     "font-style": (
       property: font-style,
       class: fst,
@@ -445,8 +450,7 @@ $utilities: map-merge(
         lighter: $font-weight-lighter,
         normal: $font-weight-normal,
         bold: $font-weight-bold,
-        bolder: $font-weight-bolder,
-        medium: 500
+        bolder: $font-weight-bolder
       )
     ),
     "line-height": (
@@ -456,8 +460,9 @@ $utilities: map-merge(
         1: 1,
         sm: $line-height-sm,
         base: $line-height-base,
-        md: 1.75,
+        md: 1.5,
         lg: $line-height-lg,
+        xl: 1.75,
       )
     ),
     "text-align": (
@@ -586,42 +591,42 @@ $utilities: map-merge(
       )
     ),
     // scss-docs-end utils-visibility
-    "object-fit": (
-      property: object-fit,
-      class: obj-fit,
-      responsive: true,
-      values: contain cover grab
-    ),
-    "font-family": (
-      property: font-family,
-      class: ff,
-      values: (
-        sans: $font-family-sans-serif,
-        mono: $font-family-monospace,
-      )
-    ),
-    "letter-spacing": (
-      property: letter-spacing,
-      class: ls,
-      values: (
-        p: 0.7px,
-        1: 1px,
-        2: 1.6px,
-        3: 2px,
-        4: 2.25px
-      )
-    ),
-    "opacity": (
-      property: opacity,
-      class: opacity,
-      values: (
-        0: 0,
-        25: .25,
-        50: .5,
-        75: .75,
-        100: 1,
-      )
-    )
+    // "object-fit": (
+    //   property: object-fit,
+    //   class: obj-fit,
+    //   responsive: true,
+    //   values: contain cover grab
+    // ),
+    // "font-family": (
+    //   property: font-family,
+    //   class: ff,
+    //   values: (
+    //     sans: $font-family-sans-serif,
+    //     mono: $font-family-monospace,
+    //   )
+    // ),
+    // "letter-spacing": (
+    //   property: letter-spacing,
+    //   class: ls,
+    //   values: (
+    //     p: 0.7px,
+    //     1: 1px,
+    //     2: 1.6px,
+    //     3: 2px,
+    //     4: 2.25px
+    //   )
+    // ),
+    // "opacity": (
+    //   property: opacity,
+    //   class: opacity,
+    //   values: (
+    //     0: 0,
+    //     25: .25,
+    //     50: .5,
+    //     75: .75,
+    //     100: 1,
+    //   )
+    // )
   ),
   $utilities
 );
