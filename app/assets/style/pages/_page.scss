@@ -13,3 +13,31 @@
     background:rgba(#000, 0.7)
   }
 }
+
+.liveStream {
+  // image
+  background-image: url('https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80');
+  // card.body
+  .card {
+    background-color: #190014CC
+  }
+}
+
+
+.square {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+}
+
+.bgImg-default {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.subscribe {
+  background-position: bottom;
+  background-image: url('https://images.unsplash.com/photo-1536768767433-cc552f38def9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80') ;
+  height: 320px
+}

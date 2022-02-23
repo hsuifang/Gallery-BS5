@@ -426,11 +426,11 @@ $utilities: map-merge(
     // scss-docs-end utils-spacing
     // Text
     // scss-docs-start utils-text
-    "font-family": (
-      property: font-family,
-      class: font,
-      values: (monospace: var(--#{$variable-prefix}font-monospace))
-    ),
+    // "font-family": (
+    //   property: font-family,
+    //   class: font,
+    //   values: (monospace: var(--#{$variable-prefix}font-monospace))
+    // ),
     "font-size": (
       rfs: true,
       property: font-size,
@@ -591,20 +591,27 @@ $utilities: map-merge(
       )
     ),
     // scss-docs-end utils-visibility
-    // "object-fit": (
-    //   property: object-fit,
-    //   class: obj-fit,
-    //   responsive: true,
-    //   values: contain cover grab
-    // ),
-    // "font-family": (
-    //   property: font-family,
-    //   class: ff,
-    //   values: (
-    //     sans: $font-family-sans-serif,
-    //     mono: $font-family-monospace,
-    //   )
-    // ),
+    "writing-mode": (
+      property: writing-mode,
+      class: writing-mode,
+      values: (
+        vr: vertical-rl
+      )
+    ),
+    "object-fit": (
+      property: object-fit,
+      class: obj-fit,
+      responsive: true,
+      values: contain cover grab
+    ),
+    "font-family": (
+      property: font-family,
+      class: ff,
+      values: (
+        sans: $font-family-sans-serif,
+        mono: $font-family-monospace,
+      )
+    ),
     // "letter-spacing": (
     //   property: letter-spacing,
     //   class: ls,
