@@ -1089,7 +1089,7 @@ $card-spacer-x:                     $spacer * 1.5; //$spacer !default;
 $card-title-spacer-y:               $spacer / 2 !default;
 $card-border-width:                 $border-width !default;
 $card-border-radius:                0; //$border-radius !default;
-$card-border-color:                 rgba($black, .125) !default;
+$card-border-color:                 none; //rgba($black, .125) !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y / 2 !default;
 $card-cap-padding-x:                $card-spacer-x !default;
