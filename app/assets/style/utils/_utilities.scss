@@ -449,8 +449,9 @@ $utilities: map-merge(
         light: $font-weight-light,
         lighter: $font-weight-lighter,
         normal: $font-weight-normal,
+        medium: 500,
         bold: $font-weight-bold,
-        bolder: $font-weight-bolder
+        bolder: $font-weight-bolder,
       )
     ),
     "line-height": (
