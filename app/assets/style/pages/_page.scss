@@ -62,3 +62,61 @@
     }
   }
 }
+
+// cart
+.cart {
+  background: black;
+  width: 540px;
+  opacity: 0;
+  top: 92px;
+  position:absolute;
+
+  @include media-breakpoint-down (md) {
+    position:fixed;
+    overflow: hidden;
+    width: 100%;
+    height: calc(100vh - 77px);
+    top: 77px;
+  }
+
+  &.show {
+    opacity: 1;
+    z-index: 1;
+    transition: opacity 0.5s linear;
+  }
+  .cart__footer {
+    background: black;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 1.5rem;
+  }
+
+  .cart__content {
+    height:560px;
+    overflow-y: scroll;
+    padding-bottom: 1.5rem;
+    @include media-breakpoint-down (md) {
+      height: calc(100vh - 140px);
+    }
+  }
+  /* width */
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    
+    background: white; 
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $secondary; 
+    border-radius: 10px;
+  }
+
+}

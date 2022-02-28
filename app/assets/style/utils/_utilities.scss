@@ -613,6 +613,13 @@ $utilities: map-merge(
         mono: $font-family-monospace,
       )
     ),
+    "z-index": (
+      property: z-index,
+      class: zIdx,
+      values: (
+        1: 1
+      )
+    )
     // "letter-spacing": (
     //   property: letter-spacing,
     //   class: ls,
