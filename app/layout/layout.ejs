@@ -16,7 +16,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-md navbar-light">
+    <nav class="navbar navbar-expand-md navbar-light border border-content">
       <div class="container-fluid justify-content-center align-items-center">
         <a class="navbar-brand" href="#">EXHIBINECTION</a>
       </div>
@@ -178,7 +178,8 @@
 
 
   <!-- 訂閱 -->
-  <section class="py-6 subscribe" >
+  <% if(page != 'checkout' ) { %>   
+  <section class="py-6 subscribe"  >
     <div class="container  h-100">
       <div class="row align-items-end h-100">
         <div class="col-md-6 col-lg-4">
@@ -192,7 +193,7 @@
       </div>
     </div>
   </section>
-
+  <% } %>   
   <footer class="py-4 py-md-6 container">
     <div class="d-flex justify-content-between">
       <div class="d-md-flex align-items-center">

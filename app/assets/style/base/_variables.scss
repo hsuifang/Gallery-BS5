@@ -75,7 +75,7 @@ $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         #EFEFEF; //$gray-100 !default;
 $dark:          $gray-900 !default;
-$custom:        #707070;
+$content:        #707070;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -88,7 +88,7 @@ $theme-colors: (
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark,
-  "content":    $custom,
+  "content":    $content,
   "white":      $white,
   "custom":     #373A3C,
 ) !default;
@@ -292,7 +292,7 @@ $body-text-align:           null !default;
 //
 // Style anchor elements.
 
-$link-color:                              $primary !default;
+$link-color:                              $content; //$primary !default;
 $link-decoration:                         underline !default;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
@@ -975,7 +975,7 @@ $navbar-dark-disabled-color:        rgba($white, .25) !default;
 $navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
 $navbar-dark-toggler-border-color:  rgba($white, .1) !default;
 
-$navbar-light-color:                $custom;// rgba($black, .55) !default;
+$navbar-light-color:                $content;// rgba($black, .55) !default;
 $navbar-light-hover-color:          rgba($black, .7) !default;
 $navbar-light-active-color:         rgba($black, .9) !default;
 $navbar-light-disabled-color:       rgba($black, .3) !default;
