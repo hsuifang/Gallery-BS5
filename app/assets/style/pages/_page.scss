@@ -47,7 +47,8 @@
 
 .items-scroll {
   overflow-x: scroll;
-  white-space: nowrap;
+  white-space: nowrap ;
+  flex-wrap: nowrap;
 }
 
 // product ----------------------------------------------------------------

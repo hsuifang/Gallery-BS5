@@ -183,9 +183,10 @@ $utilities: map-merge(
       values: (100: 100vh)
     ),
     "min-viewport-height": (
+      responsive: true,
       property: min-height,
       class: min-vh,
-      values: (80:80vh, 100: 100vh)
+      values: (50: 50vh, 80:80vh, 100: 100vh)
     ),
     // scss-docs-end utils-sizing
     // Flex utilities
@@ -432,6 +433,7 @@ $utilities: map-merge(
     //   values: (monospace: var(--#{$variable-prefix}font-monospace))
     // ),
     "font-size": (
+      responsive: true,
       rfs: true,
       property: font-size,
       class: fs,
